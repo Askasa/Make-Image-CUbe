@@ -40,6 +40,10 @@ pip install ninja
 
 [LLFF](https://github.com/Fyusion/LLFF)
 
+```PowerShell
+python imgs2poses.py "{your image folder}"
+```
+
 ### Data Prepare
 
 - Sythetic data
@@ -54,6 +58,6 @@ with open('testing_data.pkl','wb') as f: pickle.dump(testing_data.numpy(), f)
 
 ### Rendering result
 
-```cmd
+```PowerShell
 python train.py --num_epochs 2 --fine_stage 1 --device 'cpu'
 ```
